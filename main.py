@@ -27,11 +27,12 @@ scissors = '''
 '''
 game=[rock , paper , scissors]
 choice_user=int(input("what do you chose ? type 0 for rock,1 for paper,2 for scissors"))
-if choice_user >= 3 and choice_user < 0:
+if choice_user >= 3 or choice_user < 0:
     print("invalid oparation, you lose")
 else:
     print(game[choice_user])
     com_choice=random.randint(0,2)
+    print("computer choice")
     print(game[com_choice])
     if choice_user == 0 and com_choice == 1:
         print("you lose !")
